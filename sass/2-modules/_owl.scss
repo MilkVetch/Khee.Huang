@@ -1,0 +1,32 @@
+.owl-wrapper {
+  @include juice-prefixer(transition, all 0.2s ease, webkit moz ms o spec);
+}
+
+#owl-demo .item{
+  cursor: e-resize;
+  padding: 30px 0px;
+  @include bp(max,768px) {
+    padding-top: 0px;
+  }
+  color: #FFF;
+  width: 100%;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+.customNavigation{
+  text-align: center;
+}
+//use styles below to disable ugly selection
+.customNavigation a{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
